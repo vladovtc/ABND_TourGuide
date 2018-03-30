@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_adriatic"
+            android:title="@string/adriatic_sea" />
+        <item
+            android:id="@+id/nav_castles"
+            android:title="@string/castles" />
+        <item
+            android:id="@+id/nav_national_parks"
+            android:title="@string/national_parks" />
+        <item
+            android:id="@+id/nav_museum"
+            android:title="@string/museum" />
+    </group>
+
+</menu>
