@@ -26,7 +26,6 @@ public class MuseumFragment extends Fragment {
         data.add(new Data(R.drawable.museum_mestrovic, getString(R.string.name_mestrovic), getString(R.string.description_mestrovic), getString(R.string.wiki_mestrovic), getString(R.string.location_mestrovic)));
         data.add(new Data(R.drawable.museum_croatian_natural, getString(R.string.name_croatian_natural), getString(R.string.description_croatian_natural), getString(R.string.wiki_croatian_natural), getString(R.string.location_croatian_natural)));
 
-
         View rootView = inflater.inflate(R.layout.content_main,container, false);
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));

@@ -28,7 +28,6 @@ public class CastlesFragment extends Fragment {
         data.add(new Data(R.drawable.castle_kastilac, getString(R.string.name_kastilac), getString(R.string.description_kastilac), getString(R.string.wiki_kastilac), getString(R.string.location_kastilac)));
         data.add(new Data(R.drawable.castle_pejacevic, getString(R.string.name_pejacevic), getString(R.string.description_pejacevic), getString(R.string.wiki_pejacevic), getString(R.string.location_pejacevic)));
 
-
         View rootView = inflater.inflate(R.layout.content_main, container, false);
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));

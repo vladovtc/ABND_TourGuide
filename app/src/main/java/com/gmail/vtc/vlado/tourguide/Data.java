@@ -39,5 +39,4 @@ public class Data {
     public String getLocation() {
         return location;
     }
-
 }

@@ -26,7 +26,6 @@ public class NationalParkFragment extends Fragment {
         data.add(new Data(R.drawable.park_krka, getString(R.string.name_krka), getString(R.string.description_krka), getString(R.string.wiki_krka), getString(R.string.location_krka)));
         data.add(new Data(R.drawable.park_velebit, getString(R.string.name_velebit), getString(R.string.description_velebit), getString(R.string.wiki_velebit), getString(R.string.location_velebit)));
 
-
         View rootView = inflater.inflate(R.layout.content_main, container, false);
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));

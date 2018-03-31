@@ -13,6 +13,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by user on 26.3.2018..
  */
@@ -25,24 +28,24 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MyViewHolder> 
         this.dataList = dataList;
     }
 
-
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private ImageView imageView;
-        private TextView textView;
-        private TextView textView1;
-        private Button btnWiki;
-        private Button btnLocation;
-
+        @BindView(R.id.iv_picture)
+        ImageView imageView;
+        @BindView(R.id.tv_name)
+        TextView textView;
+        @BindView(R.id.tv_description)
+        TextView textView1;
+        @BindView(R.id.btn_wiki)
+        Button btnWiki;
+        @BindView(R.id.btn_location)
+        Button btnLocation;
 
         public MyViewHolder(View itemView) {
-            super(itemView);
-            imageView = itemView.findViewById(R.id.iv_picture);
-            textView = itemView.findViewById(R.id.tv_name);
-            textView1 = itemView.findViewById(R.id.tv_description);
-            btnWiki = itemView.findViewById(R.id.btn_wiki);
-            btnLocation = itemView.findViewById(R.id.btn_location);
 
+            super(itemView);
+
+            ButterKnife.bind(this, itemView);
         }
     }
 
@@ -80,7 +83,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MyViewHolder> 
     public int getItemCount() {
         return dataList.size();
     }
-
 
     @NonNull
     @Override

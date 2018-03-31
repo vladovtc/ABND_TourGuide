@@ -44,7 +44,5 @@ public class AdriaticSeaFragment extends Fragment {
         data.add(new Data(R.drawable.blue_lagoon, getString(R.string.name_blue_lagoon), getString(R.string.description_blue_lagoon), getString(R.string.wiki_blue_lagoon), getString(R.string.location_blue_lagoon)));
         data.add(new Data(R.drawable.hvar, getString(R.string.name_hvar), getString(R.string.description_hvar), getString(R.string.wiki_hvar), getString(R.string.location_hvar)));
         data.add(new Data(R.drawable.dubrovnik, getString(R.string.name_dubrovnik), getString(R.string.description_dubrovnik), getString(R.string.wiki_dubrovnik), getString(R.string.location_dubrovnik)));
-
     }
-
 }
